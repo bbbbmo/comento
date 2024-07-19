@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="/assets/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="battery">100%</div>
+    </header>
+    <div class="wrapper">
+      <div class="wrapper__left">
+        <div class="clock">
+          <div class="time">
+            <div class="time__hour">00 :</div>
+            <div class="time__minute">00 :</div>
+            <div class="time__second">00</div>
+          </div>
+          <div class="date">00/00/0000</div>
+        </div>
+        <form class="alarm">
+          <input class="alarm__title" type="text" placeholder="summary" />
+          <div class="alarm__time">
+            <input class="alarm__hour" type="number" placeholder="hour" />
+            <input class="alarm__minute" type="number" placeholder="minute" />
+            <input class="alarm__second" type="number" placeholder="second" />
+          </div>
+          <button class="alarm__add">+</button>
+        </form>
+      </div>
+      <div class="wrapper__right">
+        <div class="list">
+          <div class="list__header">Alarm List</div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/time.js"></script>
+    <script src="/assets/js/battery.js"></script>
+    <script src="/assets/js/alarm.js"></script>
+  </body>
+</html>
