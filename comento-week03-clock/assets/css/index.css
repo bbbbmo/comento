@@ -1,0 +1,164 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d050f;
+  color: aliceblue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+header {
+  height: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.battery {
+  background-color: green;
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  margin-left: 20px;
+  color: #0d050f;
+  border-radius: 3px;
+}
+
+.battery:hover {
+  transform: scale(1.1);
+}
+
+.wrapper {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper__left {
+  width: 45%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+.clock {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.clock:hover {
+  transform: scale(1.1);
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  font-size: 12rem;
+  color: #456acf;
+}
+
+.date {
+  font-size: 3rem;
+}
+
+.alarm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.alarm__title {
+  width: 420px;
+  height: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.alarm__time {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.alarm__hour,
+.alarm__minute,
+.alarm__second {
+  width: 138px;
+  height: 30px;
+  border: 0;
+  margin-top: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.alarm__add {
+  width: 80px;
+  height: 80px;
+  border: 0;
+  font-size: 5rem;
+  color: #c70415;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: transparent;
+}
+
+.alarm__add:hover {
+  transform: scale(1.1);
+}
+
+.wrapper__right {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list__header {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.list__item {
+  margin-left: 20px;
+  font-size: 2rem;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+} /*.list__item:hover를 적용하면 화면을 넘어가 스크롤이 생김 why?*/
+
+.item__title {
+  font-size: 2.5rem;
+  color: orange;
+}
+
+.item__detail {
+  display: flex;
+  align-items: center;
+  color: orange;
+}
+
+.item__delete {
+  font-size: 1.2rem;
+  border: 0;
+  background-color: transparent;
+}
+
+.item__delete:hover {
+  -webkit-transform: scale(1.2);
+}
