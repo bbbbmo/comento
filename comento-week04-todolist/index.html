@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="/assets/css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__header">To-do List</div>
+      <div class="wrapper__main">
+        <div class="wrapper__left">
+          <div class="summary">오늘 할일😟</div>
+          <div class="content">
+            <form class="input-todo">
+              <input
+                class="input-todo__detail"
+                type="text"
+                placeholder="해야할 일을 입력해 주세요"
+              />
+              <input class="input-todo__time" type="time" />
+              <button class="input-todo__button">+</button>
+            </form>
+            <div class="quote">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__right">
+          <div class="summary">할일 리스트💪</div>
+          <div class="content">
+            <div class="content__to-do-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/quote.js"></script>
+    <script src="/assets/js/todo.js"></script>
+  </body>
+</html>
