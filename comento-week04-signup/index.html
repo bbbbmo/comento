@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원 가입 페이지</title>
+    <link rel="stylesheet" href="/assets/css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__header"><div class="title">회원가입</div></div>
+      <form class="wrapper__main">
+        <div class="info">
+          <div class="info__summary">아이디</div>
+          <div class="info__id">
+            <input
+              class="info__input"
+              id="id"
+              type="text"
+              placeholder="아이디 입력(6~20자)"
+              minlength="6"
+              maxlength="12"
+              required
+            />
+            <button class="check">중복 확인</button>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info__summary">비밀번호</div>
+          <input
+            class="info__input"
+            id="password"
+            type="password"
+            placeholder="비밀번호 입력(영문자, 숫자, 특수문자(!@#$%^*) 포함 8~20자)"
+            minlength="8"
+            maxlength="20"
+            required
+          />
+        </div>
+        <div class="info">
+          <div class="info__summary">비밀번호 확인</div>
+          <input
+            class="info__input"
+            id="verifyPassword"
+            type="password"
+            placeholder="비밀번호 재입력"
+            minlength="8"
+            maxlength="20"
+            required
+          />
+        </div>
+        <div class="info">
+          <div class="info__summary">이름</div>
+          <input
+            class="info__input"
+            type="text"
+            placeholder="이름을 입력해주세요"
+            required
+          />
+        </div>
+        <div class="info">
+          <div class="info__summary">전화번호</div>
+          <input
+            class="info__input"
+            type="tel"
+            placeholder="휴대폰 번호 입력"
+            required
+          />
+        </div>
+        <div class="info">
+          <div class="info__summary">이메일 주소</div>
+          <div class="info__email">
+            <input
+              class="info__input"
+              id="email"
+              type="text"
+              placeholder="이메일 주소"
+            />
+            @
+            <select class="info__select" required>
+              <option disabled value="" selected>선택</option>
+              <option value="naver.com">naver.com</option>
+              <option value="google.com">google.com</option>
+              <option value="daum.com">daum.com</option>
+              <option value="nate.com">nate.com</option>
+            </select>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info__summary">생년월일</div>
+          <input class="info__input" id="date" type="date" required />
+        </div>
+        <div class="wrapper__footer">
+          <button class="signup">가입하기</button>
+        </div>
+      </form>
+    </div>
+    <script src="/assets/js/date.js"></script>
+    <script src="/assets/js/signup.js"></script>
+  </body>
+</html>
